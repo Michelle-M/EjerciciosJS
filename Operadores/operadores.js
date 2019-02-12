@@ -82,15 +82,15 @@ Compramos una empresa y los personas se duplicaron
 Mostrar en consola la cantidad de personas en este momento y el mensaje: Cantidad de personas: cantidadDePersonas*/
 
 /*var cantidadDePersonas = 100;
-cantidadDePersonas = 100 + 5;
+cantidadDePersonas += 5;
 
 console.log( 'Cantidad de personas: ' + cantidadDePersonas );
 
-cantidadDePersonas = 105 - 3;
+cantidadDePersonas -= 3;
 
 console.log( 'Cantidad de personas: ' + cantidadDePersonas );
 
-cantidadDePersonas = 102 * 2;
+cantidadDePersonas *= 2;
 
 console.log( 'Cantidad de personas: ' + cantidadDePersonas );*/
 
@@ -174,6 +174,11 @@ Mostrar en consola los siguientes mensajes:
 El alumno tiene un promedio mayor o igual que el requerido: true/false
 Al alumno le faltaron ${puntos} para aprobar*/
 
+/*var promedioParaAprobar = 6;
+var promedioDelAlumno = 4;
 
-
-
+if ( promedioDelAlumno >= promedioParaAprobar ) {
+    console.log( 'Pasa el promedio de 6');
+} if ( promedioDelAlumno <= promedioParaAprobar ) {
+    console.log( 'No llega con el promedio. Le faltaron ' + (promedioParaAprobar - promedioDelAlumno) + ' puntos para aprobar');
+}*/
