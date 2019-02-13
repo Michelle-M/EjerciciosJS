@@ -43,7 +43,7 @@ for ( ochoAsteriscos = '* * * * * * * *'; filas <= 1; filas += 2) {
 
 //Ejercicio 103
 
-var asteriscoPrincipio = '*';
+/*var asteriscoPrincipio = '*';
 var asteriscoResta = '';
 var filas = 0;
 var resta = 4;
@@ -54,7 +54,7 @@ for ( asteriscoPrincipio = '*'; filas <= 4; filas++ ) {
 } for ( asteriscoResta = ''; filas > 0; filas-- ) {
     console.log(asteriscoResta);
     resta = filas - 2;
-}
+}*/
 
 //Ejercicio 104
 //Partiendo del siguiente código, realizar la suma de todos los números pares que hay entre el valor guardado en la variable n y el valor guardado en m (incluyéndolo)
@@ -77,3 +77,13 @@ for ( n = 10; m <= 26; m += 2) {
     console.log(n + m);
     n = n + m;
 }*/
+
+//IMPORTANTE!!!!!!!! -  REHACER CON EL ESTANDAR
+
+//a = '*'
+
+//for (let index = 0; index < array.length /*o un numero*/; index++) { //seria i (el estandar)
+    //console.log(i)
+    //ADENTRO PONGO LO A
+    //a = a + '*'
+//}*/
