@@ -258,7 +258,7 @@ Mostrar el contenido de playlistEscuchada*/
 /*var playlist = ['Smells Like Teen Spirit', 'Come As You Are', 'Heart-Shaped Box', 'Lithium'];
 var playlistEscuchada = ['School'];
 
-var eliminado = playlist.pop();
+var eliminado = playlist.shift();
 playlistEscuchada.push(eliminado);
 
 console.log(playlist);
