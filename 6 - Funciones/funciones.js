@@ -303,15 +303,90 @@ Retornar el elemento que se encuentra en la primer posición*/
 
 // codear a aca abajo la solución al ejercicio
 
-var peliculasBatman = ["Batman Begins", "The Dark Knight", "The Dark Knight Rises"];
+/*var peliculasBatman = ["Batman Begins", "The Dark Knight", "The Dark Knight Rises"];
 
 var numerosPares = [0, 2, 4, 6, 8, 10, 12];
 
-function obtenerPrimerElemento () {
-    
+function obtenerPrimerElemento(peli) {
+    console.log(peli);
 }
 
+obtenerPrimerElemento(peliculasBatman[0]);*/
 
+//Ejercicio 015
+/*Crear una función llamada obtenerUltimoElemento
+La función recibe un único parámetro, del tipo array
+Retornar el elemento que se encuentra en la última posición*/
+// codear a aca abajo la solución al ejercicio
 
-  
+/*var peliculasBatman = ["Batman Begins", "The Dark Knight", "The Dark Knight Rises"];
+
+var numerosPares = [0, 2, 4, 6, 8, 10, 12];
+
+function obtenerUltimoElemento (peli) {
+    console.log(peli)
+}
+
+obtenerUltimoElemento(peliculasBatman.pop());*/
+
+//Ejercicio 016
+/*Crear una función llamada calcularSumatoria
+La función recibe un único parámetro, del tipo array, con números enteros
+Retornar la suma de todos los números que pertenecen al array*/
+// codear a aca abajo la solución al ejercicio
+
+// CREAR calcularSumatoria
+
+var numeros = [7, 4, 1, 8, 9, 4, 9];
+
+function calcularSumatoria(resultado) {
+    console.log(resultado);
+}
+
+calcularSumatoria();
+
+//Ejercicio 017
+/*Crear otra función llamada calcularPromedio
+La función recibe un único parámetro, del tipo array, con números enteros
+Retornar el promedio entre todos los números que pertenecen al array*/
+// codear a aca abajo la solución al ejercicio
+// CREAR calcularPromedio
+// para la funcion calcularPromedio podés utilizar calcularSumatoria que hicimos en el ejercicio fn_016
+
+var numeros = [7, 4, 1, 8, 9, 4, 9];
+
+//Ejercicio 018
+/*Tenemos un array en una variable masNumeros con números al azar.
+También tenemos dos arrays vacios en las dos variables numerosPares y numerosImpares.
+Recorré el array masNumeros y:
+Si el número es par, agregalo al array numerosPares
+Si el número es impar, agregalo al array numerosImpares
+Por ejemplo: Si tenemos [7, 8, 9, 10], numerosPares quedaría [8, 10] y numerosImpares quedaría [7, 9]
+Para saber si un número es par o impar, tenemos que utilizar las funciones que creamos en el ejercicio fn_012*/
+
+var masNumeros = [ 43, 11, 18, 46, 44, 37, 42, 29, 9, 3, 37, 0, 40, 10, 38, 34, 25, 40, 4, 32 ];
+var numerosPares = [];
+var numerosImpares = [];
+
+//Ejercicio 019
+/*Crear una función con el nombre compararNumeros que acepte dos parámetros numéricos llamados numero1 y numero2
+
+La función tiene que retornar:
+
+SI numero1 es menor que numero2, retornar -1
+SI numero2 es menor que numero1, retornar 1
+SI numero1 es igual que numero2, retornar 0
+Probar la función en el siguiente código*/
+
+//Ejercicio 020
+/*Crear una función con el nombre mostrarElNumeroMasGrande que acepte dos parámetros numéricos llamados numero1 y numero2
+
+La función tiene que retornar el mensaje:
+
+SI numero1 es mayor que numero2, retornar El número ${numero1} es más grande que ${numero2}
+SI numero2 es menor que numero1, retornar El número ${numero2} es más grande que ${numero1}
+SI numero1 es igual que numero2, retornar Los dos números son iguales
+Para comparar los dos números, hay que usar la función compararNumeros desarrollada en el ejercicio fn_019
+
+Probar la función en el siguiente código*/
 
