@@ -264,6 +264,191 @@ playlistEscuchada.push(eliminado);
 console.log(playlist);
 console.log(playlistEscuchada);*/
 
+//Ejercicio 017
+/*Si tenemos el array playlist
+Recorrer la lista de canciones con un ciclo y mostrarlas en consola una a una utilizando console.log()
+De inicio a fin
+De fin a inicio*/
+
+/*var playlist = ["Concrete and Gold", "The Line", "Sunday Rain", "Happy Ever After (Zero Hour)", "Arrows", "Dirty Water", "La Dee Da", "The Sky Is a Neighborhood", "Make It Right", "Run", "T-Shirt"];
+
+for ( var i = 0; i < playlist.length; i++ ) {
+    console.log(playlist[i]);
+}
+
+for ( var i = playlist.length; i >= 0; i-- ) {
+    console.log(playlist[i]);
+}*/
+
+//Ejercicio 018
+/*Si tenemos el array womenInTech
+Ordenar el array
+Mostrar en la consola el array ordenado
+Revertir el orden de la lista ordenada
+Mostrar en la consola el array revertido
+Unir los nombres de todas las mujeres en tecnología utilizando " - " para separarlos*/
+
+/*var womenInTech = ["Ada Lovelace", "Hedy Lamarr", "Grace Hopper", "Radia Perlman", "Janie Tsao", "Sheryl Sandberg", "Susan Kare", "Parisa Tabriz"];
+womenInTech = womenInTech.sort(); //Array ordenado
+console.log(womenInTech); //Consola del array ordenado
+womenInTech = womenInTech.reverse(); //Orden invertido
+console.log(womenInTech); // Consola del invertido
+var concatenadas = womenInTech.join(' - ');
+console.log(concatenadas);*/
+
+//Ejercicio 019
+/*Si tenemos dos arrays playlistNirvana y playlistFoo:
+Crear una variable playlistCompleta, con los nombres de todas las canciones que hay en playlistNirvana y playlistFoo.
+Mostrar en consola los siguiente nombres de forma individual (uno por linea):
+Nombres de las canciones de nirvana (a mano utilizando índices)
+Nombres de los canciones de foo fighters (utilizando while)
+Nombres de todas las canciones entre ambas listas (utilizando for)*/
+
+/*var playlistNirvana = ['Smells Like Teen Spirit', 'Come As You Are', 'Heart-Shaped Box', 'Lithium'];
+var playlistFoo = ['Everlong', 'The Pretender', 'Learn to Fly'];
+
+var playlistCompleta = ['Smells Like Teen Spirit', 'Come As You Are', 'Heart-Shaped Box', 'Lithium', 'Everlong', 'The Pretender', 'Learn to Fly'];
+
+//Canciones de Nirvana con indices
+
+console.log(playlistCompleta[0]);
+console.log(playlistCompleta[1]);
+console.log(playlistCompleta[2]);
+console.log(playlistCompleta[3]);
+
+//Canciones Foo Fighters con while
+//Como plantear la condicion
+
+//Todas las canciones con for
+
+for ( var i = 0; i < playlistCompleta.length; i++ ) {
+    console.log(playlistCompleta[i]);
+}*/
+
+//Ejercicio 020
+/*Tenemos un array de canciones de Spotify. Queremos mostrar por consola la siguiente información:
+Posición de la canción Lithium
+Posición de la canción On a Plain
+Completar el siguiente código para que pueda mostrarnos lo que solicitamos*/
+
+/*var playlist = ['Smells Like Teen Spirit', 'Come As You Are', 'Heart-Shaped Box', 'Lithium'];
+
+var indiceLithium = playlist.indexOf('Lithium');
+var indiceOnAPlain = playlist.indexOf('On A Plain');
+
+console.log('La posicion de Lithium es: ' + indiceLithium);
+console.log('La posicion de On A Plain es: ' + indiceOnAPlain);*/
+
+//Ejercicio 021
+/*Tenemos un array con todas las ganadoras de RuPaul’s Drag Race, en la variable ganadorasRupaul. Vamos a escribir un programa en el que queremos saber la siguiente información:
+Que número de ganadora es Sharon Needles
+Mostrar por pantalla si Latrice Royale fue una ganadora del concurso.
+Completar el siguiente código para que pueda mostrarnos lo que solicitamos*/
+
+/*var ganadorasRupaul = ["Tyra Sanchez", "Chad Michaels", "Raja", "Trixie Mattel", "Aquaria", "Bebe Zahara Benet", "Sharon Needles", "Jinkx Monsoon", "Alaska Thunderfuck 5000", "Bianca Del Rio", "Violet Chachki", "Bob the Drag Queen", "Sasha Velour"];
+
+var posicionSharonNeedles = ganadorasRupaul.indexOf('Sharon Needles');
+var latriceRoyaleGano = ganadorasRupaul.indexOf('Latrice Royale');
+
+console.log('Sharon Needles es la ganadora número: ' + posicionSharonNeedles);
+console.log(posicionSharonNeedles); 
+
+if (latriceRoyaleGano >= 0) {
+  console.log("Latrice Royale fue ganadora de RuPaul's Drag Race");
+} else {
+  console.log("Latrice Royale NO fue ganadora de RuPaul's Drag Race");
+}*/
+
+//Ejercicio 022
+/*Tenemos un array llamado womenInTech sobre el que tenés que realizar las siguientes operaciones:
+Eliminar a "Bill Gates", que está en la última posición
+Agregar "Parisa Tabriz" al final del array
+Luego de realizar las dos operaciones, vamos a mostrar la siguiente información por consola:
+- La longitud del array
+- Quien está en la posición 3
+- Mostrar todos los elementos del array, uno debajo del otro*/
+
+/*var womenInTech = ["Ada Lovelace", "Hedy Lamarr", "Grace Hopper", "Radia Perlman", "Janie Tsao", "Sheryl Sandberg", "Susan Kare", "Bill Gates"];
+
+//Primera parte
+
+var elimino = womenInTech.pop();
+var nuevaLista = womenInTech.push('Parisa Tabriz');
+console.log(womenInTech); //Prueba de que se hizo bien
+
+//Segunda parte
+
+var longitud = womenInTech.length;
+var enLaPosicion3 = womenInTech[2];
+console.log("La longitud del array es: " + longitud);
+console.log("En la posición 3 está: " + enLaPosicion3);
+
+//Toda la lista indice por indice
+
+for ( var i = 0; i < womenInTech.length; i++ ) {
+    console.log(womenInTech[i]);
+}*/
+
+//Ejercicio 023
+/*Tenemos un array llamado womenInTech con nombres de mujeres influyentes en la tecnología.
+Queremos transformar el array en un string sin usar join, separando los nombres con un guión y guardando el string resultante en la variable nombresSeparadosPorGuion*/
+
+/*var womenInTech = ["Ada Lovelace", "Hedy Lamarr", "Grace Hopper", "Radia Perlman", "Janie Tsao", "Sheryl Sandberg", "Susan Kare", "Parisa Tabriz"];
+
+var nombresSeparadosPorGuion = womenInTech.toString();
+//Como sumar el -
+
+console.log(nombresSeparadosPorGuion);*/
+
+//Ejercicio 024
+/*Tenemos un array llamado numbers con números enteros al azar.
+Queremos calcular la suma de todos los números que están en el array.
+Por ejemplo: Si tenemos [1, 2, 3], la suma de todos los números es 6*/
+
+/*var numbers = [6, 1, 34, 94, 3, 17];
+//var sum = 0;
+//Pensar otra forma de resolverlo
+var sum = numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4] + numbers[5];
+
+console.log(sum) // 155 */
+
+//Ejercicio 025
+/*Tenemos un array llamado notasDeTPs con números del 1 al 10, que representan las notas de los distintos trabajos prácticos entregados por Grace Hopper en el curso de Ada.
+Queremos calcular la nota promedio final de trabajos prácticos (el promedio se calcula sumando todas las notas y dividiéndolo por la cantidad de notas).
+Por ejemplo: Si tenemos [7, 8, 9, 10], la nota final es 8.5*/
+
+/*var notasDeTPs = [4, 7, 8, 5, 10];
+//var notaFinal = 0;
+//Pensar otra forma de resolverlo
+var notaFinal = (notasDeTPs[0] + notasDeTPs[1] + notasDeTPs[2] + notasDeTPs[3] + notasDeTPs[4]) / 5;
+
+console.log(notaFinal) // 6.8 */
+
+//Ejercicio 026
+/*Tenemos un array en una variable masNumeros con números al azar.
+También tenemos dos arrays vacios en las dos variables numerosPares y numerosImpares.
+Recorré el array masNumeros y:
+Si el número es par, agregalo al array numerosPares
+Si el número es impar, agregalo al array numerosImpares
+Por ejemplo: Si tenemos [7, 8, 9, 10], numerosPares quedaría [8, 10] y numerosImpares quedaría [7, 9]*/
+
+/*var masNumeros = [ 43, 11, 18, 46, 44, 37, 42, 29, 9, 3, 37, 0, 40, 10, 38, 34, 25, 40, 4, 32 ];
+var numerosPares = [];
+var numerosImpares = [];
+
+// SOLUCION
+
+console.log("pares: ", numerosPares);
+console.log("impares: ", numerosImpares);
+// deberias tener como resultado
+// pares: [18, 46, 44, 42, 0, 40, 10, 38, 34, 40, 4, 32]
+// impares: [43, 11, 37, 29, 9, 3, 37, 25]*/
+
+
+
+
+
+
 
 
 
