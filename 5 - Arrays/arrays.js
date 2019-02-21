@@ -433,16 +433,11 @@ Si el número es impar, agregalo al array numerosImpares
 Por ejemplo: Si tenemos [7, 8, 9, 10], numerosPares quedaría [8, 10] y numerosImpares quedaría [7, 9]*/
 
 /*var masNumeros = [ 43, 11, 18, 46, 44, 37, 42, 29, 9, 3, 37, 0, 40, 10, 38, 34, 25, 40, 4, 32 ];
-var numerosPares = [];
-var numerosImpares = [];
+var numerosPares = [ masNumeros[2], masNumeros[3], masNumeros[4], masNumeros[6], masNumeros[11], masNumeros[12], masNumeros[13], masNumeros[14], masNumeros[15], masNumeros[17], masNumeros[18], masNumeros[19] ];
+var numerosImpares = [ masNumeros[0], masNumeros[1], masNumeros[5], masNumeros[7], masNumeros[8], masNumeros[9], masNumeros[10], masNumeros[16]];
 
-// SOLUCION
-
-console.log("pares: ", numerosPares);
-console.log("impares: ", numerosImpares);
-// deberias tener como resultado
-// pares: [18, 46, 44, 42, 0, 40, 10, 38, 34, 40, 4, 32]
-// impares: [43, 11, 37, 29, 9, 3, 37, 25]*/
+console.log("Pares: ", numerosPares);
+console.log("Impares: ", numerosImpares);*/
 
 
 
