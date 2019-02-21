@@ -439,6 +439,120 @@ var numerosImpares = [ masNumeros[0], masNumeros[1], masNumeros[5], masNumeros[7
 console.log("Pares: ", numerosPares);
 console.log("Impares: ", numerosImpares);*/
 
+//Ejercicio 027
+/*Tenemos un array en una variable playlist con una lista de canciones de un disco.
+Recorrer la lista con la función forEach y mostrarlas una por una utilizando console.log()*/
+
+/*var playlist = ["Concrete and Gold", "The Line", "Sunday Rain", "Happy Ever After (Zero Hour)", "Arrows", "Dirty Water", "La Dee Da", "The Sky Is a Neighborhood", "Make It Right", "Run", "T-Shirt"];
+
+playlist.forEach(function(canciones) {
+  console.log(canciones);
+});*/
+
+//Ejercicio 028
+/*Tenemos un array en una variable librosDeJS con una lista de libros de javascript.
+Queremos saber la cantidad de libros que tenemos en el array
+Nos pidieron que evitemos usar la propiedad length para contar los elementos de un array y que tenemos que usar si o si un forEach
+Completá el siguiente código para que funcione el último console.log() y muestre el mensaje Mi lista de libros de JavaScript tiene 9 libros*/
+
+/*var librosDeJS = [
+  'JavaScript for Kids: A Playful Introduction to Programming',
+  'Composing Software',
+  'Eloquent JavaScript: A Modern Introduction to Programming',
+  'JavaScript: The Good Parts',
+  'Programming JavaScript Applications: Robust Web Architecture with Node, HTML5, and Moderns JS Libraries',
+  'Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript',
+  'JavaScript: The Definitive Guide',
+  'You Don’t Know JS',
+  'JavaScript Allongé: The Six Edition'
+];
+
+var totalLibros = librosDeJS.forEach(function(cancion, indice) {
+  console.log(indice + 1);
+})
+
+console.log('Mi lista de libros de JavaScript tiene ' + totalLibros + ' libros');*/
+
+//Ejercicio 029
+/*Tenemos un array en una variable playlist con una lista de canciones de un disco.
+Recorrer la lista con la función forEach y mostrar la posición y el nombre de la canción utilizando un console.log()*/
+
+/*var playlist = ["Concrete and Gold", "The Line", "Sunday Rain", "Happy Ever After (Zero Hour)", "Arrows", "Dirty Water", "La Dee Da", "The Sky Is a Neighborhood", "Make It Right", "Run", "T-Shirt"];
+
+playlist.forEach(function(cancion, indice) {
+  console.log(indice + ' - ' + cancion);
+});*/
+
+//Ejercicio 030
+/*Tenemos un array llamado numbers con números enteros al azar.
+Queremos calcular la suma de todos los números que están en el array.
+Por ejemplo: Si tenemos [1, 2, 3], la suma de todos los números es 6
+Es necesario utilizar forEach para conseguir la suma*/
+
+/*var numbers = [6, 1, 34, 94, 3, 17];
+var sum = 0;
+
+sum = numbers.forEach(function(suma) {
+  
+});*/
+
+//Ejercicio 031
+/*Tenemos un array llamado notasDeTPs con números del 1 al 10, que representan las notas de los distintos trabajos prácticos entregados por Grace Hopper en el curso de Ada.
+Queremos calcular la nota promedio final de trabajos prácticos (el promedio se calcula sumando todas las notas y dividiéndolo por la cantidad de notas).
+Por ejemplo: Si tenemos [7, 8, 9, 10], la nota final es 8.5
+Es obligatorio utilizar forEach para conseguir el promedio*/
+
+/*var notasDeTPs = [4, 7, 8, 5, 10];
+var notaFinal = 0;*/
+
+//Ejercicio 032
+/*Tenemos un array en una variable masNumeros con números al azar.
+También tenemos dos arrays vacios en las dos variables numerosPares y numerosImpares.
+Recorré el array masNumeros (utilizando forEach) y:
+Si el número es par, agregalo al array numerosPares
+Si el número es impar, agregalo al array numerosImpares
+Por ejemplo: Si tenemos [7, 8, 9, 10], numerosPares quedaría [8, 10] y numerosImpares quedaría [7, 9]*/
+
+/*var masNumeros = [ 43, 11, 18, 46, 44, 37, 42, 29, 9, 3, 37, 0, 40, 10, 38, 34, 25, 40, 4, 32 ];
+var numerosPares = [];
+var numerosImpares = [];
+
+numerosPares = masNumeros.forEach(function(pares) {
+  if ( pares % 2 === 0 ) {
+    numerosPares.push(pares);
+    console.log(pares);
+  }
+});
+
+numerosImpares = masNumeros.forEach(function(impares) {
+  if ( impares % 2 !== 0 ) {
+    numerosImpares.push(impares);
+    console.log(impares);
+  }
+});*/
+
+//Terminar de resolver como mostrarlos como array 
+
+//Ejercicio 033
+/*Tenemos un array en una variable valores con números al azar.
+También tenemos un array vacio en la variable dobles.
+Recorré el array valores (utilizando forEach) y guardá, en el mismo orden, cada número pero multiplicándolo por 2.
+Por ejemplo: Si tenemos [1, 4, 7], dobles quedaría [2, 8, 14]*/
+
+/*var valores = [ 6, 0, 5, 2, 3, 8, 7, 4, 1, 9 ];
+var dobles = [];
+
+dobles = valores.forEach(function(multiplicar) {
+  dobles.push(multiplicar * 2);
+  console.log(dobles)
+});*/
+
+//Idem ejercicio 032
+
+
+
+
+
 
 
 
