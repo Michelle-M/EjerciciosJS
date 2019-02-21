@@ -473,6 +473,8 @@ var totalLibros = librosDeJS.forEach(function(cancion, indice) {
 
 console.log('Mi lista de libros de JavaScript tiene ' + totalLibros + ' libros');*/
 
+//Muestra la lista de indices pero no uno solo//
+
 //Ejercicio 029
 /*Tenemos un array en una variable playlist con una lista de canciones de un disco.
 Recorrer la lista con la función forEach y mostrar la posición y el nombre de la canción utilizando un console.log()*/
@@ -496,6 +498,8 @@ sum = numbers.forEach(function(suma) {
   
 });*/
 
+//Ver como resolverlo//
+
 //Ejercicio 031
 /*Tenemos un array llamado notasDeTPs con números del 1 al 10, que representan las notas de los distintos trabajos prácticos entregados por Grace Hopper en el curso de Ada.
 Queremos calcular la nota promedio final de trabajos prácticos (el promedio se calcula sumando todas las notas y dividiéndolo por la cantidad de notas).
@@ -504,6 +508,8 @@ Es obligatorio utilizar forEach para conseguir el promedio*/
 
 /*var notasDeTPs = [4, 7, 8, 5, 10];
 var notaFinal = 0;*/
+
+//Ver como resolverlo//
 
 //Ejercicio 032
 /*Tenemos un array en una variable masNumeros con números al azar.
@@ -531,7 +537,7 @@ numerosImpares = masNumeros.forEach(function(impares) {
   }
 });*/
 
-//Terminar de resolver como mostrarlos como array 
+//Terminar de resolver como mostrarlos como array//
 
 //Ejercicio 033
 /*Tenemos un array en una variable valores con números al azar.
@@ -547,21 +553,314 @@ dobles = valores.forEach(function(multiplicar) {
   console.log(dobles)
 });*/
 
-//Idem ejercicio 032
+//Idem ejercicio 032//
 
+//Ejercicio 034
+/*Tenemos un array en una variable numeros con números al azar.
+Usá la función map para crear un nuevo array incrementando cada valor del array en 10, y guardarlo en la variable numerosMasDiez
+Mostrar por consola el array original y el nuevo*/
 
+/*var numeros = [1, 2, 3, 4, 5];
 
+var numerosMasDiez = numeros.map(function(incremento) {
+  return incremento + 10;
+});
 
+console.log(numeros);
+console.log(numerosMasDiez);*/
 
+//Ejercicio 035
+/*Tenemos un array en una variable numeros con números al azar.
+Usar la función map para crear un nuevo array multiplicando cada valor del array por 2, y guardarlo en la variable dobles
+Mostrar por consola el array original y el nuevo*/
 
+/*var numeros = [3, 7, 13, 99];
+var dobles;
 
+dobles = numeros.map(function(multiplicacion) {
+  return multiplicacion * 2;
+});
 
+console.log(numeros);
+console.log(dobles);*/
 
+//Ejercicio 036
+/*Tenemos un array en una variable frases con frases al azar.
+Usar la función map para crear un nuevo array donde cada frase empiece y termine con signo de exclamación.
+Mostrar por consola el array original y el nuevo*/
 
+/*var frases = ['Labore sea dolor.', 'Justo rebum dolor.', 'Stet lorem amet.'];
+var signo;
 
+signo = frases.map(function(exlcamacion) {
+  return '¡' + exlcamacion + '!';
+});
 
+console.log(frases);
+console.log(signo);*/
 
+//Ejercicio 037
+/*Tenemos un array en una variable libros con libros para leer sobre Javascript.
+Usar la función map para crear un nuevo array donde cada titulo de los libros esté encerrado en una etiqueta <li></li>.
+Mostrar por consola el array nuevo, encerrándolo entre <ul></ul>*/
 
+/*var librosDeJS = [
+  'JavaScript for Kids: A Playful Introduction to Programming',
+  'Composing Software',
+  'Eloquent JavaScript: A Modern Introduction to Programming',
+  'JavaScript: The Good Parts',
+  'Programming JavaScript Applications: Robust Web Architecture with Node, HTML5, and Moderns JS Libraries',
+  'Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript',
+  'JavaScript: The Definitive Guide',
+  'You Don’t Know JS',
+  'JavaScript Allongé: The Six Edition'
+];
+var lista;
+
+lista = librosDeJS.map(function(li) {
+  return '<li>' + li + '</li>';
+});
+
+console.log('<ul>' + lista + '</ul>');*/
+
+//Ejercicio 038
+/*Tenemos un array en una variable frases con frases al azar.
+Usar la función map para crear un nuevo array que contenga la longitud de cada palabra.
+Mostrar por consola el array original y el nuevo.*/
+
+/*var frases = ['Labore sea dolor.', 'Justo rebum dolor.', 'Stet lorem amet.'];
+var longitud;
+
+longitud = frases.map(function(palabra) {
+  return palabra.length;
+});
+
+console.log(longitud);*/
+
+//Me da el de la frase, no de la palabra, volver a pensar//
+
+//Ejercicio 039
+/*Tenemos un array en una variable playlist con una lista de canciones de un disco.
+Usar la función map para agregar a cada título de la canción el número de posición en la que está dentro del array.*/
+
+/*var playlist = ['Everlong', 'The Pretender', 'Learn to Fly'];
+var indice;
+
+indice = playlist.map(function(cancion, indice) {
+  return indice + ' - ' + cancion;
+});
+
+console.log(indice);*/
+
+//Ejercicio 040
+/*Tenemos un array en una variable costos con números que representan costos de diferentes productos.
+Completar el siguiente código para llegar al resultado esperado
+A un costo primero se le agrega la ganancia y después el IVA*/
+
+/*var costos = [ 12.5, 56, 98, 45.75 ];
+
+var agregarIVA = costos.map(function (costo) {
+  return costo * 1.21;
+});
+
+var sumarGanancia = agregarIVA.map(function (costo) {
+  return costo * 1.5;
+});
+
+console.log(sumarGanancia);*/ //Tengo el total
+
+//Ejercicio 041
+/*Tenemos un array en una variable costos con números que representan costos de diferentes productos.
+También tenemos un array en una variable productos con los nombres de cada producto.
+Completar el siguiente código para llegar al resultado esperado
+A un costo primero se le agrega la ganancia y después el IVA
+El nombre de un producto en una posición, se corresponde con el precio que está en la misma posición. Por ejemplo: el producto que está en la posición 1 tiene un costo igual al elemento en la posición 1 del array costos*/
+
+/*var productos = [ 'celular', 'notebook', 'monitor' ];
+var costos = [ 12.5, 56, 98 ];
+
+var agregarIVA = costos.map(function (costo) {
+  return costo * 1.21;
+});
+
+var sumarGanancia = agregarIVA.map(function (costo) {
+  return costo * 1.5;
+});
+
+console.log(sumarGanancia);*/
+
+//Falta sumarle el producto//
+
+//Ejercicio 042
+/*Tenemos un array en una variable costos con números que representan costos de diferentes productos.
+Usando filter, crear un nuevo array con los precios más caros (mayores a 50) y guardarlo en la variable losMasCaros
+Mostrar el array original y el filtrado*/
+
+/*var costos = [ 39, 53, 17, 99, 7, 9, 6, 68, 54, 97, 27, 90, 92, 75, 26, 86, 22, 42, 20, 14 ];
+
+var losMasCaros = costos.filter(function(numerosAltos) {
+  if (numerosAltos >= 50) {
+    return numerosAltos;
+  }
+});
+
+console.log(costos);
+console.log(losMasCaros);*/
+
+//Ejercicio 043
+/*Tenemos un array en una variable frases con frases al azar.
+Usando filter, crear un nuevo array con las frases que tengan menos de 20 caracteres y guardarlo en la variable frasesCortas
+Mostrar el array resultante*/
+
+/*var frases = [
+  'Ut vero.',
+  'Gubergren labore clita et duo accusam diam dolor. Ipsum nonumy et labore kasd lorem takimata ea sed dolor. Kasd no.',
+  'Diam rebum nonumy et.',
+  'Kasd stet.',
+  'Sit et dolor.',
+  'Est diam justo gubergren dolores et vero.',
+  'Et sanctus sanctus et dolor clita.',
+  'Dolores.',
+  'Diam sea takimata voluptua ipsum labore voluptua kasd. At consetetur dolore diam.'
+];
+
+var frasesCortas = frases.filter(function(cortas){
+  if (cortas.length <= 20) {
+    return cortas;
+  }
+});
+
+console.log(frasesCortas);*/
+
+//Ejercicio 044
+/*Tenemos un array en una variable numeros con números al azar.
+También tenemos dos arrays vacios en las dos variables numerosPares y numerosImpares.
+Utilizando filter crear un nuevo array con todos los números pares y guardalo en la variable numerosPares
+Utilizando filter crear un nuevo array con todos los números impares y guardalo en la variable numerosImpares*/
+
+/*var masNumeros = [ 43, 11, 18, 46, 44, 37, 42, 29, 9, 3, 37, 0, 40, 10, 38, 34, 25, 40, 4, 32 ];
+
+var numerosPares = masNumeros.filter(function(pares) {
+  if (pares % 2 === 0) {
+    return pares;
+  }
+});
+var numerosImpares = masNumeros.filter(function(impares){
+  if (impares % 2 !== 0) {
+    return impares;
+  }
+});
+
+console.log(numerosPares);
+console.log(numerosImpares);*/
+
+//Ejercicio 045
+/*Tenemos un array en una variable mix con varios elementos, de distintos tipos de datos.
+Usando filter, crear un nuevo array con todos los elementos que sean strings y guardalo en la variable soloStrings.
+Ayuda: para saber si algo es un string en javascript, podés usar typeof ver más
+Mostrar el array resultante*/
+
+/*var mix = [
+  'Ut vero.',
+  2,
+  function () { console.log('hola mundo!') },
+  56,
+  'Diam rebum nonumy et.',
+  true,
+  false,
+  'Kasd stet.',
+  'Sit et dolor.',
+  null,
+  null,
+  [ 1, 2, 3],
+  'Dolore.'
+];
+
+var soloStrings = mix.filter(function(strings){
+  if (typeof strings === 'string') {
+    return strings;
+  }
+});
+
+console.log(soloStrings);*/
+
+//Ejercicio 046
+/*Tenemos un array playlist con canciones seleccionadas al azar por spotify para reproducir.
+Tenemos otro array playlistEscuchada que tiene canciones que ya escuchamos anteriormente.
+Usando filter, queremos crear una nueva lista que solo contenga aquellas canciones guardadas en playlist que no están en playlistEscuchada
+Guarda el resultado en la variable playlistSinEscuchar*/
+
+/*var playlist = ['Smells Like Teen Spirit', 'Everlong', 'Come As You Are', 'The Pretender', 'Heart-Shaped Box', 'Learn to Fly', 'Lithium'];
+var playlistEscuchada = ['The Pretender', 'Lithium', 'Come As You Are']
+
+var playlistSinEscuchar = playlist.filter(function(escuchados) {
+  if (escuchados !== playlistEscuchada) {
+    return escuchados;
+  }
+});
+
+console.log(playlistSinEscuchar);*/
+
+//Me devuelve todos//
+
+//Ejercicio 047
+/*Tenemos un array llamado numbers con números enteros al azar.
+Utilizando reduce, queremos calcular la suma de todos los números que están en el array.
+Por ejemplo: Si tenemos [1, 2, 3], la suma de todos los números es 6*/
+
+/*var numbers = [6, 1, 34, 94, 3, 17];
+
+var sum = numbers.reduce(function(total, numero) {
+  return total + numero;
+});
+
+console.log(sum);*/
+
+//Ejercicio 048
+/*Tenemos un array llamado numbers con números enteros al azar.
+Utilizando reduce, queremos calcular la multiplicación de todos los números que están en el array.
+Por ejemplo: Si tenemos [1, 2, 3, 4], la suma de todos los números es 24
+Ayuda: ojo con el valor de comienzo*/
+
+/*var numbers = [6, 1, 34, 94, 3, 17];
+var mul = 0;
+
+mul = numbers.reduce(function(total, mult){
+  return total * mult;
+});
+
+console.log(mul);*/
+
+//Ejercicio 049
+/*Tenemos un array llamado notasDeTPs con números del 1 al 10, que representan las notas de los distintos trabajos prácticos entregados por Grace Hopper en el curso de Ada.
+Usando reduce, queremos calcular la nota promedio final de trabajos prácticos (el promedio se calcula sumando todas las notas y dividiéndolo por la cantidad de notas).
+Por ejemplo: Si tenemos [7, 8, 9, 10], la nota final es 8.5*/
+
+/*var notasDeTPs = [4, 7, 8, 5, 10];
+var notaFinal = 0;
+
+notaFinal = notasDeTPs.reduce(function(total, notas){
+  return total + notas;
+});
+
+console.log(notaFinal / notasDeTPs.length);*/
+
+//Ejercicio 050
+/*Tenemos un array en una variable libros con libros para leer sobre Javascript.
+Usar la función reduce para crear un string con todos los titulos de los libros encerrados en una etiqueta <li></li>.
+Mostrar por consola el array nuevo, encerrándolo entre <ul></ul>*/
+
+var librosDeJS = [
+  'JavaScript for Kids: A Playful Introduction to Programming',
+  'Composing Software',
+  'Eloquent JavaScript: A Modern Introduction to Programming',
+  'JavaScript: The Good Parts',
+  'Programming JavaScript Applications: Robust Web Architecture with Node, HTML5, and Moderns JS Libraries',
+  'Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript',
+  'JavaScript: The Definitive Guide',
+  'You Don’t Know JS',
+  'JavaScript Allongé: The Six Edition'
+];
 
 
 
