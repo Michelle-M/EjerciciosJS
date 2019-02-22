@@ -126,8 +126,6 @@ function obtenerSaludo () {
     return 'Hola, ' + nombre;
 }
 
-obtenerSaludo();
-
 var textoDelSaludo = obtenerSaludo();
 console.log(textoDelSaludo);*/
 
@@ -147,10 +145,23 @@ Mostrar el mensaje: El usuario no es válido*/
 }
 
 function usuarioValido () {
-    return true;
+    if (obtenerIDUsuario() > 30) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+usuarioValido();
+var elUsuarioEsValido = usuarioValido();
+
+if (elUsuarioEsValido === true) {
+    console.log('El usuario es valido');
+} else {
+    console.log('El usuario no es valido');
 }*/
 
-//Ejercio 010
+//Ejercicio 010
 /*Crear una función llamada mostrarNombreCompleto
 Esta función recibe 2 parámetros nombre y apellido
 Mostrar con console.log() el nombre completo de la persona, concatenando nombre y apellido
@@ -223,10 +234,10 @@ Todo el código de cada función debería ir dentro de las llaves de esa funció
 
 sonIguales();*/
 
-/*function tienenLaMismaLongitud(str1, str2) {
+function tienenLaMismaLongitud(str1, str2) {
   // retorna true si los dos strings str1 y str2 tienen el mismo largo
   // sino retorna false
-}*/
+}
 
 /*function esMenorQueNoventa(num) {
   if ( num < 90 ) {
@@ -301,8 +312,6 @@ saludar('Ada');*/
 La función recibe un único parámetro, del tipo array
 Retornar el elemento que se encuentra en la primer posición*/
 
-// codear a aca abajo la solución al ejercicio
-
 /*var peliculasBatman = ["Batman Begins", "The Dark Knight", "The Dark Knight Rises"];
 
 var numerosPares = [0, 2, 4, 6, 8, 10, 12];
@@ -317,7 +326,6 @@ obtenerPrimerElemento(peliculasBatman[0]);*/
 /*Crear una función llamada obtenerUltimoElemento
 La función recibe un único parámetro, del tipo array
 Retornar el elemento que se encuentra en la última posición*/
-// codear a aca abajo la solución al ejercicio
 
 /*var peliculasBatman = ["Batman Begins", "The Dark Knight", "The Dark Knight Rises"];
 
@@ -333,17 +341,18 @@ obtenerUltimoElemento(peliculasBatman.pop());*/
 /*Crear una función llamada calcularSumatoria
 La función recibe un único parámetro, del tipo array, con números enteros
 Retornar la suma de todos los números que pertenecen al array*/
-// codear a aca abajo la solución al ejercicio
 
-// CREAR calcularSumatoria
+/*var numeros = [7, 4, 1, 8, 9, 4, 9];
+var suma = 0;
 
-var numeros = [7, 4, 1, 8, 9, 4, 9];
+function calcularSumatoria(numeritos) {
+    return numeros.reduce(function(total, item) {
+        return total + item;
+    });
+  }
 
-function calcularSumatoria(resultado) {
-    console.log(resultado);
-}
-
-calcularSumatoria();
+suma = calcularSumatoria();
+console.log(suma);*/
 
 //Ejercicio 017
 /*Crear otra función llamada calcularPromedio
@@ -353,7 +362,17 @@ Retornar el promedio entre todos los números que pertenecen al array*/
 // CREAR calcularPromedio
 // para la funcion calcularPromedio podés utilizar calcularSumatoria que hicimos en el ejercicio fn_016
 
-var numeros = [7, 4, 1, 8, 9, 4, 9];
+/*var numeros = [7, 4, 1, 8, 9, 4, 9];
+var resultadoFinal;
+
+function calcularPromedio(promedio) {
+    return numeros.reduce(function(total, item) {
+        return total + item
+    });
+}
+
+resultadoFinal = calcularPromedio()/numeros.length;
+console.log(resultadoFinal);*/
 
 //Ejercicio 018
 /*Tenemos un array en una variable masNumeros con números al azar.
@@ -368,6 +387,15 @@ var masNumeros = [ 43, 11, 18, 46, 44, 37, 42, 29, 9, 3, 37, 0, 40, 10, 38, 34, 
 var numerosPares = [];
 var numerosImpares = [];
 
+function pares(numeros) {
+    if ( masNumeros % 2 === 0 ) {
+        return numeros;
+    }
+}
+
+numerosPares = pares();
+console.log(numerosPares);
+
 //Ejercicio 019
 /*Crear una función con el nombre compararNumeros que acepte dos parámetros numéricos llamados numero1 y numero2
 
@@ -377,6 +405,10 @@ SI numero1 es menor que numero2, retornar -1
 SI numero2 es menor que numero1, retornar 1
 SI numero1 es igual que numero2, retornar 0
 Probar la función en el siguiente código*/
+
+console.log( compararNumeros(1, 5) < 0 ); // true
+console.log( compararNumeros(5, 1) > 0 ); // true
+console.log( compararNumeros(1, 1) === 0 ); // true
 
 //Ejercicio 020
 /*Crear una función con el nombre mostrarElNumeroMasGrande que acepte dos parámetros numéricos llamados numero1 y numero2
@@ -390,3 +422,6 @@ Para comparar los dos números, hay que usar la función compararNumeros desarro
 
 Probar la función en el siguiente código*/
 
+console.log( mostrarElNumeroMasGrande(1, 5) ); // El número 5 es más grande que 1
+console.log( mostrarElNumeroMasGrande(63, 27) ); // El número 63 es más grande que 27
+console.log( mostrarElNumeroMasGrande(1, 1) ); // Los dos números son iguales
