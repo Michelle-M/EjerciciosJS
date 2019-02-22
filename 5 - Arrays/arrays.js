@@ -212,6 +212,8 @@ Los elementos tienen que guardarse en el orden inverso al que se van ingresando
 Mostrar en consola la primera y última canción
 Mostrar en consola el contenido del array*/
 
+var concreteAndGold = [];
+
 //Ejercicio 014
 /*Partiendo del siguiente array de números var numeros = [6, 1, 2, 3, 4, 5];
 Eliminar el primer elemento, y agregarlo al final del array.
@@ -304,7 +306,7 @@ Nombres de las canciones de nirvana (a mano utilizando índices)
 Nombres de los canciones de foo fighters (utilizando while)
 Nombres de todas las canciones entre ambas listas (utilizando for)*/
 
-/*var playlistNirvana = ['Smells Like Teen Spirit', 'Come As You Are', 'Heart-Shaped Box', 'Lithium'];
+var playlistNirvana = ['Smells Like Teen Spirit', 'Come As You Are', 'Heart-Shaped Box', 'Lithium'];
 var playlistFoo = ['Everlong', 'The Pretender', 'Learn to Fly'];
 
 var playlistCompleta = ['Smells Like Teen Spirit', 'Come As You Are', 'Heart-Shaped Box', 'Lithium', 'Everlong', 'The Pretender', 'Learn to Fly'];
@@ -323,7 +325,7 @@ console.log(playlistCompleta[3]);
 
 for ( var i = 0; i < playlistCompleta.length; i++ ) {
     console.log(playlistCompleta[i]);
-}*/
+}
 
 //Ejercicio 020
 /*Tenemos un array de canciones de Spotify. Queremos mostrar por consola la siguiente información:
@@ -393,12 +395,12 @@ for ( var i = 0; i < womenInTech.length; i++ ) {
 /*Tenemos un array llamado womenInTech con nombres de mujeres influyentes en la tecnología.
 Queremos transformar el array en un string sin usar join, separando los nombres con un guión y guardando el string resultante en la variable nombresSeparadosPorGuion*/
 
-/*var womenInTech = ["Ada Lovelace", "Hedy Lamarr", "Grace Hopper", "Radia Perlman", "Janie Tsao", "Sheryl Sandberg", "Susan Kare", "Parisa Tabriz"];
+var womenInTech = ["Ada Lovelace", "Hedy Lamarr", "Grace Hopper", "Radia Perlman", "Janie Tsao", "Sheryl Sandberg", "Susan Kare", "Parisa Tabriz"];
 
 var nombresSeparadosPorGuion = womenInTech.toString();
 //Como sumar el -
 
-console.log(nombresSeparadosPorGuion);*/
+console.log(nombresSeparadosPorGuion);
 
 //Ejercicio 024
 /*Tenemos un array llamado numbers con números enteros al azar.
@@ -420,9 +422,9 @@ Por ejemplo: Si tenemos [7, 8, 9, 10], la nota final es 8.5*/
 /*var notasDeTPs = [4, 7, 8, 5, 10];
 //var notaFinal = 0;
 //Pensar otra forma de resolverlo
-var notaFinal = (notasDeTPs[0] + notasDeTPs[1] + notasDeTPs[2] + notasDeTPs[3] + notasDeTPs[4]) / 5;
+var notaFinal = (notasDeTPs[0] + notasDeTPs[1] + notasDeTPs[2] + notasDeTPs[3] + notasDeTPs[4]) / notasDeTPs.length;
 
-console.log(notaFinal) // 6.8 */
+console.log(notaFinal) // 6.8*/
 
 //Ejercicio 026
 /*Tenemos un array en una variable masNumeros con números al azar.
@@ -455,7 +457,7 @@ Queremos saber la cantidad de libros que tenemos en el array
 Nos pidieron que evitemos usar la propiedad length para contar los elementos de un array y que tenemos que usar si o si un forEach
 Completá el siguiente código para que funcione el último console.log() y muestre el mensaje Mi lista de libros de JavaScript tiene 9 libros*/
 
-/*var librosDeJS = [
+var librosDeJS = [
   'JavaScript for Kids: A Playful Introduction to Programming',
   'Composing Software',
   'Eloquent JavaScript: A Modern Introduction to Programming',
@@ -471,7 +473,7 @@ var totalLibros = librosDeJS.forEach(function(cancion, indice) {
   console.log(indice + 1);
 })
 
-console.log('Mi lista de libros de JavaScript tiene ' + totalLibros + ' libros');*/
+console.log('Mi lista de libros de JavaScript tiene ' + totalLibros + ' libros');
 
 //Muestra la lista de indices pero no uno solo//
 
@@ -491,12 +493,12 @@ Queremos calcular la suma de todos los números que están en el array.
 Por ejemplo: Si tenemos [1, 2, 3], la suma de todos los números es 6
 Es necesario utilizar forEach para conseguir la suma*/
 
-/*var numbers = [6, 1, 34, 94, 3, 17];
+var numbers = [6, 1, 34, 94, 3, 17];
 var sum = 0;
 
 sum = numbers.forEach(function(suma) {
   
-});*/
+});
 
 //Ver como resolverlo//
 
@@ -506,8 +508,8 @@ Queremos calcular la nota promedio final de trabajos prácticos (el promedio se 
 Por ejemplo: Si tenemos [7, 8, 9, 10], la nota final es 8.5
 Es obligatorio utilizar forEach para conseguir el promedio*/
 
-/*var notasDeTPs = [4, 7, 8, 5, 10];
-var notaFinal = 0;*/
+var notasDeTPs = [4, 7, 8, 5, 10];
+var notaFinal = 0;
 
 //Ver como resolverlo//
 
@@ -519,7 +521,7 @@ Si el número es par, agregalo al array numerosPares
 Si el número es impar, agregalo al array numerosImpares
 Por ejemplo: Si tenemos [7, 8, 9, 10], numerosPares quedaría [8, 10] y numerosImpares quedaría [7, 9]*/
 
-/*var masNumeros = [ 43, 11, 18, 46, 44, 37, 42, 29, 9, 3, 37, 0, 40, 10, 38, 34, 25, 40, 4, 32 ];
+var masNumeros = [ 43, 11, 18, 46, 44, 37, 42, 29, 9, 3, 37, 0, 40, 10, 38, 34, 25, 40, 4, 32 ];
 var numerosPares = [];
 var numerosImpares = [];
 
@@ -535,7 +537,7 @@ numerosImpares = masNumeros.forEach(function(impares) {
     numerosImpares.push(impares);
     console.log(impares);
   }
-});*/
+});
 
 //Terminar de resolver como mostrarlos como array//
 
@@ -545,13 +547,13 @@ También tenemos un array vacio en la variable dobles.
 Recorré el array valores (utilizando forEach) y guardá, en el mismo orden, cada número pero multiplicándolo por 2.
 Por ejemplo: Si tenemos [1, 4, 7], dobles quedaría [2, 8, 14]*/
 
-/*var valores = [ 6, 0, 5, 2, 3, 8, 7, 4, 1, 9 ];
+var valores = [ 6, 0, 5, 2, 3, 8, 7, 4, 1, 9 ];
 var dobles = [];
 
 dobles = valores.forEach(function(multiplicar) {
   dobles.push(multiplicar * 2);
   console.log(dobles)
-});*/
+});
 
 //Idem ejercicio 032//
 
@@ -628,14 +630,14 @@ console.log('<ul>' + lista + '</ul>');*/
 Usar la función map para crear un nuevo array que contenga la longitud de cada palabra.
 Mostrar por consola el array original y el nuevo.*/
 
-/*var frases = ['Labore sea dolor.', 'Justo rebum dolor.', 'Stet lorem amet.'];
+var frases = ['Labore sea dolor.', 'Justo rebum dolor.', 'Stet lorem amet.'];
 var longitud;
 
 longitud = frases.map(function(palabra) {
   return palabra.length;
 });
 
-console.log(longitud);*/
+console.log(longitud);
 
 //Me da el de la frase, no de la palabra, volver a pensar//
 
@@ -676,7 +678,7 @@ Completar el siguiente código para llegar al resultado esperado
 A un costo primero se le agrega la ganancia y después el IVA
 El nombre de un producto en una posición, se corresponde con el precio que está en la misma posición. Por ejemplo: el producto que está en la posición 1 tiene un costo igual al elemento en la posición 1 del array costos*/
 
-/*var productos = [ 'celular', 'notebook', 'monitor' ];
+var productos = [ 'celular', 'notebook', 'monitor' ];
 var costos = [ 12.5, 56, 98 ];
 
 var agregarIVA = costos.map(function (costo) {
@@ -687,7 +689,7 @@ var sumarGanancia = agregarIVA.map(function (costo) {
   return costo * 1.5;
 });
 
-console.log(sumarGanancia);*/
+console.log(sumarGanancia);
 
 //Falta sumarle el producto//
 
@@ -790,7 +792,7 @@ Tenemos otro array playlistEscuchada que tiene canciones que ya escuchamos anter
 Usando filter, queremos crear una nueva lista que solo contenga aquellas canciones guardadas en playlist que no están en playlistEscuchada
 Guarda el resultado en la variable playlistSinEscuchar*/
 
-/*var playlist = ['Smells Like Teen Spirit', 'Everlong', 'Come As You Are', 'The Pretender', 'Heart-Shaped Box', 'Learn to Fly', 'Lithium'];
+var playlist = ['Smells Like Teen Spirit', 'Everlong', 'Come As You Are', 'The Pretender', 'Heart-Shaped Box', 'Learn to Fly', 'Lithium'];
 var playlistEscuchada = ['The Pretender', 'Lithium', 'Come As You Are']
 
 var playlistSinEscuchar = playlist.filter(function(escuchados) {
@@ -799,7 +801,7 @@ var playlistSinEscuchar = playlist.filter(function(escuchados) {
   }
 });
 
-console.log(playlistSinEscuchar);*/
+console.log(playlistSinEscuchar);
 
 //Me devuelve todos//
 
@@ -862,6 +864,88 @@ var librosDeJS = [
   'JavaScript Allongé: The Six Edition'
 ];
 
+var lista = librosDeJS.reduce(function(acumulador, item) {
+  return '<li>' + item + '</li>';
+});
 
+console.log(lista);
+//Me muestra solo el ultimo item solamente
 
+//Ejercicio 051
 
+/*Tenemos un array llamado numeros con números enteros al azar.
+Utilizando reduce, queremos crear un nuevo array con todos los números, pero eliminando aquellos que estén repetidos.
+Por ejemplo: Si tenemos [1, 4, 3, 2, 4], el nuevo array sería [1, 4, 3, 2]*/
+
+var numeros = [5, 1, 7, 12, 5, 2, 9, 0, 11, 9, 11];
+
+//Ejercicio 052
+/*Tenemos un array en una variable numeros con números al azar.
+Utilizando reduce crear un nuevo array con todos los números pares y guardalo en la variable numerosPares*/
+
+var masNumeros = [ 43, 11, 18, 46, 44, 37, 42, 29, 9, 3, 37, 0, 40, 10, 38, 34, 25, 40, 4, 32 ];
+
+//Ejercicio 053
+/*Tenemos un array en una variable numeros con números al azar.
+Utilizando reduce crear un nuevo array con todos los números impares y guardalo en la variable numerosImpares*/
+
+var masNumeros = [ 43, 11, 18, 46, 44, 37, 42, 29, 9, 3, 37, 0, 40, 10, 38, 34, 25, 40, 4, 32 ];
+
+//Ejercicio 054
+/*Tenemos un array en una variable costos con números que representan costos de diferentes productos.
+Completar el siguiente código para obtener el precio final de cada producto y después calcular la suma total.
+A un costo primero se le agrega la ganancia y después el IVA
+Usar map y reduce*/
+
+var costos = [ 12.5, 56, 98 ];
+
+var agregarIVA = function (costo) {
+  return costo * 1.21;
+}
+
+var sumarGanancia = function (costo) {
+  return costo * 1.5;
+}
+
+//Ejercicio 055
+/*Tenemos un array en una variable datos con números al azar, que pueden ser tanto positivos como negativos
+Queremos eliminar todos los números negativos
+Con los números restantes, obtener el doble de cada uno
+Finalmente, obtener la suma de todos los números*/
+
+var datos = [2, -4, 6, 0, 5, -1];
+
+var nuevaDatos = datos.map(function(positivo) {
+  if (positivo > 0) {
+    return positivo;
+  }
+});
+
+console.log(nuevaDatos);
+
+var dobles = nuevaDatos.map(function(multiplicar) {
+  return multiplicar * 2;
+});
+
+console.log(dobles);
+
+var suma = dobles.reduce(function(total, doble) {
+  return total + doble;
+});
+
+console.log(total);
+
+//Ejercicio 056
+/*Tenemos un array, que tiene como elementos otros arrays
+A partir de ese array, queremos "aplanarlo" para conseguir un único array con todos los elementos
+Por ejemplo: [ [1, 2], [3, 4], [5, 6] ] aplanado (flatten) sería igual a [ 1, 2, 3, 4, 5, 6 ]*/
+
+var arrays = [
+  [1, 2, 3],
+  [4],
+  [5, 6],
+  [],
+  [7]
+];
+// codear acá la solución del ejercicio
+var flattenArray;
