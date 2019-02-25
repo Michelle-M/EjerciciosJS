@@ -1,3 +1,5 @@
+//Intro
+
 //Ejercicio 000
 /*Declarar una variable llamada womenInTech y asignarle un array que contenga 5 nombres de mujeres influyentes en la tecnología.
 Declarar una variable llamada arrayDeNumeros y asignarle un array que contenga 5 números (cualquier número).
@@ -56,6 +58,8 @@ Utilizar el primer y último item del array datos para formar el string del mens
 if ( datos[1] === true ) {
     console.log(datos[2], datos[0]);
 }*/
+
+//Indices
 
 //Ejercicio 005
 /*Declarar un array vacio con el nombre alumnas
@@ -117,6 +121,8 @@ var peliculasBatman = [peliculas[1], peliculas[2], peliculas[4], peliculas[5]];
 console.log(peliculas);
 console.log(peliculasBatman);*/
 
+//Longitud
+
 //Ejercicio 008
 /*Declarar una variable etiquetasHtml con varios de los nombres de las etiquetas de HTML que ya conocés
 Mostrar en consola el nombre de la 2da etiqueta del array en mayúsculas
@@ -155,6 +161,8 @@ if ( largoNirvana > largoFoo ) {
 } else {
     console.log('La playlist de Foo Fighters es más larga');
 }*/
+
+//Push, unshift, shift y pop
 
 //Ejercicio 011
 /*Eliminá el primer elemento del array y colocá en su lugar tu fruta o verdura preferida utilizando shift y unshift.*/
@@ -265,6 +273,8 @@ playlistEscuchada.push(eliminado);
 
 console.log(playlist);
 console.log(playlistEscuchada);*/
+
+//Sort, reverse, concat, join, indexOf, toString, for
 
 //Ejercicio 017
 /*Si tenemos el array playlist
@@ -441,6 +451,8 @@ var numerosImpares = [ masNumeros[0], masNumeros[1], masNumeros[5], masNumeros[7
 console.log("Pares: ", numerosPares);
 console.log("Impares: ", numerosImpares);*/
 
+//ForEach
+
 //Ejercicio 027
 /*Tenemos un array en una variable playlist con una lista de canciones de un disco.
 Recorrer la lista con la función forEach y mostrarlas una por una utilizando console.log()*/
@@ -556,6 +568,8 @@ dobles = valores.forEach(function(multiplicar) {
 });
 
 //Idem ejercicio 032//
+
+//Map
 
 //Ejercicio 034
 /*Tenemos un array en una variable numeros con números al azar.
@@ -693,6 +707,8 @@ console.log(sumarGanancia);
 
 //Falta sumarle el producto//
 
+//Filter
+
 //Ejercicio 042
 /*Tenemos un array en una variable costos con números que representan costos de diferentes productos.
 Usando filter, crear un nuevo array con los precios más caros (mayores a 50) y guardarlo en la variable losMasCaros
@@ -805,6 +821,8 @@ console.log(playlistSinEscuchar);
 
 //Me devuelve todos//
 
+//Reduce
+
 //Ejercicio 047
 /*Tenemos un array llamado numbers con números enteros al azar.
 Utilizando reduce, queremos calcular la suma de todos los números que están en el array.
@@ -890,6 +908,8 @@ var masNumeros = [ 43, 11, 18, 46, 44, 37, 42, 29, 9, 3, 37, 0, 40, 10, 38, 34, 
 Utilizando reduce crear un nuevo array con todos los números impares y guardalo en la variable numerosImpares*/
 
 var masNumeros = [ 43, 11, 18, 46, 44, 37, 42, 29, 9, 3, 37, 0, 40, 10, 38, 34, 25, 40, 4, 32 ];
+
+//Practicas generales
 
 //Ejercicio 054
 /*Tenemos un array en una variable costos con números que representan costos de diferentes productos.
