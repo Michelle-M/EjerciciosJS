@@ -519,12 +519,23 @@ Asignar a las propiedades del objeto persona tu nombre y edad
 Mostrar en consola los valores de cada propiedad del objeto persona utilizando corchetes y los valores: 'nombre' y 'edad' en lugar de utilizar el punto
 Mostrar en consola los valores de cada propiedad del objeto persona utilizando las variables propiedadNombre y propiedadEdad*/
 
+/*var propiedadNombre = 'nombre';
+var propiedadEdad = 'edad';
+
+var persona = {
+  nombre: 'Michelle',
+  edad: 25,
+}
+
+console.log(persona[propiedadNombre]);
+console.log(persona[propiedadEdad]);*/
+
 //Ejercicio 020
 /*Partiendo de un objeto guardado en la variable producto
 Mostrar en la consola el nombre de todas las propiedades que tiene el producto
 Utilizar el método keys*/
 
-var producto = {
+/*var producto = {
   id: 'ADA-020',
   title: 'Gubergren sed est amet voluptua',
   price: 123.75,
@@ -534,10 +545,7 @@ var producto = {
   location: 'Capital Federal'
 };
 
-// completá acá el código
-var todasLasPropiedades = ;
-
-console.log(todasLasPropiedades);
+console.log(Object.keys(producto));*/
 
 //Ejercicio 021
 /*Partiendo de un objeto guardado en la variable producto
@@ -545,7 +553,7 @@ Mostrar en la consola el nombre y valor de todas las propiedades que tiene el pr
 Utilizar el método keys
 El formato para mostrar la propiedad y valor es: "producto['[ACA NOMBRE DE LA PROPIEDAD]'] -> [ACA VALOR DE LA PROPIEDAD]"*/
 
-var producto = {
+/*var producto = {
   id: 'ADA-020',
   title: 'Gubergren sed est amet voluptua',
   price: 123.75,
@@ -555,16 +563,36 @@ var producto = {
   location: 'Capital Federal'
 };
 
+var propiedades = Object.keys(producto);
+console.log(propiedades) //Aca veo solo el array de propiedades (id, title, price, etc) pero no los valores
+
+for ( var i = 0; i < propiedades.length; i++ ) {
+  var propiedad = propiedades[i];
+  console.log('Producto ' + propiedad + '-->' + producto[propiedad]);
+}*/
+
 //Ejercicio 022
 /*Partiendo de un objeto guardado en la variable user
 Verificar si tiene la propiedad email
 Si no la tiene, mostrar en pantalla: 'El usuario no tiene la propiedad email'
 Si la tiene, mostrar en pantalla: 'El usuario tiene la propiedad email'*/
 
-var user = {
+/*var user = {
   username: 'ada_lovelace',
-  password: '1234567890!'
+  password: '1234567890!',
+  email: 'ada@gmail.com',
 };
+
+var usuario = Object.keys(user);
+var mensaje = 'El usuario no tiene la propiedad email'
+
+for ( var i = 0; i < usuario.length; i++ ) { 
+  if ([usuario[i]] === 'email') {
+    mensaje = 'El usuario tiene la propiedad email';
+  } 
+}
+
+console.log(mensaje);*/
 
 //Ejercicio 023
 /*Completa el código dentro de la función hasProperty
