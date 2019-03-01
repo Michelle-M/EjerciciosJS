@@ -220,70 +220,86 @@ console.log(div(15,3) === 5);*/
 //Ejercicio 012
 /*Copiar el código que se encuentra a continuación, y completar las funciones
 Todo el código de cada función debería ir dentro de las llaves de esa función*/
+//Lo que va dentro de la funcion es codigo comun como siempre
 
 /*function sonIguales(a, b) {
-    a = 'Michelle';
-    b = 'Michelle';
-    //b = 'Morena';
   if (a === b) {
-      console.log('Son iguales');
+      return true;
   } else {
-      console.log('Son distintos');
+      return false;
   }
 }
 
-sonIguales();*/
+console.log( sonIguales('Ada', 'ada') === false ); //false === false, entonces voy a ver true // === pregunta
+console.log( sonIguales('Ada', 'Ada') === true ); //true === true, entonces voy a ver true*/
 
-function tienenLaMismaLongitud(str1, str2) {
-  // retorna true si los dos strings str1 y str2 tienen el mismo largo
-  // sino retorna false
+
+/*function tienenLaMismaLongitud(str1, str2) {
+  if ( str1.length === str2.length ) {
+      return true;
+  } else {
+      return false;
+  }
 }
+
+console.log( tienenLaMismaLongitud('ada', 'Ada') === true );
+console.log( tienenLaMismaLongitud('ada', 'Grace') === false );*/
 
 /*function esMenorQueNoventa(num) {
   if ( num < 90 ) {
-      console.log('El numero es menor que 90')
+      return true;
   } else {
-      console.log('El numero es mayor a 90');
+      return false;
   }
 }
 
-esMenorQueNoventa(80);*/
+console.log( esMenorQueNoventa(45) === true );
+console.log( esMenorQueNoventa(115) === false );
+console.log( esMenorQueNoventa(90) === false );*/
 
 /*function esMayorQueCincuenta(num) {
     if ( num > 50 ) {
-        console.log('El numero es mayor que 50');
+        return true;
     } else {
-        console.log('El numero es menor que 50');
+        return false;
     }
 }
 
-esMayorQueCincuenta(25);*/
+console.log( esMayorQueCincuenta(90) === true );
+console.log( esMayorQueCincuenta(45) === false );
+console.log( esMayorQueCincuenta(50) === false );*/
 
 /*function obtenerResto(a, b) {
-    console.log(a%b);
+    return a % b;
 }
 
 obtenerResto(50,35);*/
 
 /*function esPar(num) {
     if ( num % 2 === 0 ) {
-        console.log('El numero es par');
+        return true;
     } else {
-        console.log('No es par');
+        return false;
     }
 }
 
-esPar(10);*/
+console.log( esPar(5) === false );
+console.log( esPar(116) === true );
+console.log( esPar(0) === true );
+console.log( esPar(-4) === true );*/
 
 /*function esImpar(num) {
     if ( num % 2 !== 0 ) {
-        console.log('El numero es impar');
+        return true;
     } else {
-        console.log('No es impar');
+        return false;
     }
 }
 
-esImpar(11);*/
+console.log( esImpar(50) === false );
+console.log( esImpar(3) === true );
+console.log( esImpar(-5) === true );
+console.log( esImpar(4) === false );*/
 
 //Ejercicio 013
 /*Copiar el código que se encuentra a continuación, y completar las funciones
@@ -387,14 +403,17 @@ var masNumeros = [ 43, 11, 18, 46, 44, 37, 42, 29, 9, 3, 37, 0, 40, 10, 38, 34, 
 var numerosPares = [];
 var numerosImpares = [];
 
-function pares(numeros) {
-    if ( masNumeros % 2 === 0 ) {
-        return numeros;
+for ( var i = 0; i < masNumeros.length; i++ ) {
+    function ordenarNumeros(numeros) {
+        if ( masNumeros[i] % 2 === 0 ) {
+            numerosPares.push(numeros);
+            return numerosPares;
+        } else if ( masNumeros[i] % 2 !== 0 ) {
+            numerosImpares.push(numeros);
+            return numerosImpares;
+        }
     }
 }
-
-numerosPares = pares();
-console.log(numerosPares);
 
 //Ejercicio 019
 /*Crear una función con el nombre compararNumeros que acepte dos parámetros numéricos llamados numero1 y numero2
@@ -406,9 +425,19 @@ SI numero2 es menor que numero1, retornar 1
 SI numero1 es igual que numero2, retornar 0
 Probar la función en el siguiente código*/
 
+/*function compararNumeros(numero1, numero2) {
+    if ( numero1 < numero2 ) {
+        return -1;
+    } else if ( numero1 > numero2 ) {
+        return 1;
+    } else if ( numero1 === numero2 ) {
+        return 0
+    }
+}
+
 console.log( compararNumeros(1, 5) < 0 ); // true
 console.log( compararNumeros(5, 1) > 0 ); // true
-console.log( compararNumeros(1, 1) === 0 ); // true
+console.log( compararNumeros(1, 1) === 0 ); // true*/
 
 //Ejercicio 020
 /*Crear una función con el nombre mostrarElNumeroMasGrande que acepte dos parámetros numéricos llamados numero1 y numero2
@@ -418,10 +447,20 @@ La función tiene que retornar el mensaje:
 SI numero1 es mayor que numero2, retornar El número ${numero1} es más grande que ${numero2}
 SI numero2 es menor que numero1, retornar El número ${numero2} es más grande que ${numero1}
 SI numero1 es igual que numero2, retornar Los dos números son iguales
-Para comparar los dos números, hay que usar la función compararNumeros desarrollada en el ejercicio fn_019
+Para comparar los dos números, hay que usar la función compararNumeros desarrollada en el ejercicio fn_019*/
 
-Probar la función en el siguiente código*/
+/*function mostrarElNumeroMasGrande(numero1, numero2) {
+    if ( numero1 > numero2 ) {
+        return 'El numero ' + numero1 + ' es mas grande que ' + numero2;
+    } else if ( numero1 < numero2 ) {
+        return 'El numero ' + numero2 + ' es mas grande que ' + numero1;
+    } else if ( numero1 === numero2 ) {
+        return 'Los dos numeros son iguales'
+    }
+}
+
+//Probar la función en el siguiente código
 
 console.log( mostrarElNumeroMasGrande(1, 5) ); // El número 5 es más grande que 1
 console.log( mostrarElNumeroMasGrande(63, 27) ); // El número 63 es más grande que 27
-console.log( mostrarElNumeroMasGrande(1, 1) ); // Los dos números son iguales
+console.log( mostrarElNumeroMasGrande(1, 1) ); // Los dos números son iguales*/
