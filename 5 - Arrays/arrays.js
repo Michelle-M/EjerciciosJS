@@ -220,7 +220,12 @@ Los elementos tienen que guardarse en el orden inverso al que se van ingresando
 Mostrar en consola la primera y última canción
 Mostrar en consola el contenido del array*/
 
-var concreteAndGold = [];
+/*var concreteAndGold = [];
+concreteAndGold.push('T-Shrit', 'Run', 'Make It Right', 'The Sky Is a Neighborhood', 'La Dee Da', 'Dirty Water', 'Arrows', 'Happy Ever After (Zero Hour)', 'Sunday Rain', 'The Line', 'Concrete and Gold');
+concreteAndGold.reverse();
+console.log(concreteAndGold.shift());
+console.log(concreteAndGold.pop());
+console.log(concreteAndGold)*/
 
 //Ejercicio 014
 /*Partiendo del siguiente array de números var numeros = [6, 1, 2, 3, 4, 5];
@@ -316,22 +321,33 @@ Nombres de las canciones de nirvana (a mano utilizando índices)
 Nombres de los canciones de foo fighters (utilizando while)
 Nombres de todas las canciones entre ambas listas (utilizando for)*/
 
-var playlistNirvana = ['Smells Like Teen Spirit', 'Come As You Are', 'Heart-Shaped Box', 'Lithium'];
-var playlistFoo = ['Everlong', 'The Pretender', 'Learn to Fly'];
-
-var playlistCompleta = ['Smells Like Teen Spirit', 'Come As You Are', 'Heart-Shaped Box', 'Lithium', 'Everlong', 'The Pretender', 'Learn to Fly'];
-
 //Canciones de Nirvana con indices
 
-console.log(playlistCompleta[0]);
-console.log(playlistCompleta[1]);
-console.log(playlistCompleta[2]);
-console.log(playlistCompleta[3]);
+var playlistNirvana = ['Smells Like Teen Spirit', 'Come As You Are', 'Heart-Shaped Box', 'Lithium'];
+
+console.log(playlistNirvana[0]);
+console.log(playlistNirvana[1]);
+console.log(playlistNirvana[2]);
 
 //Canciones Foo Fighters con while
-//Como plantear la condicion
+
+var playlistFoo = ['Everlong', 'The Pretender', 'Learn to Fly'];
+
+for ( var i = 0; i < playlistFoo.length; i++ ) {
+  console.log(playlistFoo[i])
+}
+
+while ( i < playlistFoo.length ) {
+  console.log(playlistFoo[i]);
+  var i = 0;
+  i++;
+} 
+
+//No sale el while 
 
 //Todas las canciones con for
+
+var playlistCompleta = ['Smells Like Teen Spirit', 'Come As You Are', 'Heart-Shaped Box', 'Lithium', 'Everlong', 'The Pretender', 'Learn to Fly'];
 
 for ( var i = 0; i < playlistCompleta.length; i++ ) {
     console.log(playlistCompleta[i]);
