@@ -1,16 +1,15 @@
-var cuerpo = document.querySelector('body')
-console.log(cuerpo);
+var body = document.querySelector('body');
+console.log(body);
 
-var arrayNombres = ['Sati', 'Luna', 'Leon', 'Morena', 'Zeca', 'Mishka', 'Botitas', 'Bigotes', 'Fluffy', 'Patitas']
-
-array = document.createElement('div');
-console.log(array)
+var array = ['Sati', 'Luna', 'Leon', 'Morena', 'Zeca', 'Mishka', 'Dali', 'Bigotes', 'Manchita', 'Patitas'];
 
 var ul = document.createElement('ul');
-console.log(ul)
+console.log(ul);
+body.appendChild(ul);
 
-for ( var i = 0; i < arrayNombres.length; i++ ) {
-    var li = document.createElement('li')
-    li.textContent = [i];
-    
+for ( var i = 0; i < array.length; i++ ) {
+    var li = document.createElement('li');
+    li.textContent = array[i];
+    ul.appendChild(li);
 }
+
