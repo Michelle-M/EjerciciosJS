@@ -4,11 +4,15 @@ console.log(titulo);
 var div = document.querySelector('div')
 console.log(div);
 
-if ( titulo.hasAttributes() === true || div.hasAttributes() === true ) {
+if ( titulo.hasAttributes() === true ) {
     titulo.classList.add('tachado');
-    div.classList.add('tachado');
-} else if ( titulo.hasAttributes() === false || div.hasAttributes() === false ) {
+} else if ( titulo.hasAttributes() === false ) {
     titulo.classList.add('negrita');
-    div.classList.add('negrita');
+}
+
+if ( div.hasAttributes() === true ) {
+    div.classList.add('tachado');
+} else if ( div.hasAttributes() === false ) {
+    div.classList.add('negrita')
 }
 
